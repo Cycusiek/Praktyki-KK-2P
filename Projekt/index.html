@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="koszyk.css">
+    <title>Wypożyczalnia Motocyklów</title>
+</head>
+<body>
+
+    <header>
+        <div class="header-container">
+            <h1>Wypożyczalnia Motocyklów</h1>
+            <div class="cart-container">
+                <img src="images/koszyk.png" alt="Koszyk" width="50px" id="cart-icon" style="margin-left: 2000px;">
+                <div class="cart-popup" id="cart-popup">
+
+                </div>
+            </div>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="#">Strona główna</a></li>
+                <li><a href="#">Motocykle</a></li>
+                <li><a href="rezerwacja.php">Rezerwacja</a></li>
+                <li><a href="koszyk.php">Koszyk</a></li>
+                <li><a href="kontakt.php">Kontakt</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section>
+        <h2>Lista dostępnych motocykli</h2>
+        <ul>
+            <li>Kawasaki: Ninja H2</li>
+            <li>Suzuki: GSX-R1000</li>
+            <li>BMW: S1000RR</li>
+            <li>Yamaha: YZF-R1</li>
+            <li>Ducati: Panigale V4 R</li>
+        </ul>
+    </section>
+
+    <section>
+        <h2>Rezerwacja</h2>
+        <form method="post" action="rezerwacja.php">
+            <label for="motocykl">Wybierz Markę:</label>
+            <select name="motocykl" id="motocykl">
+               <option disabled>---------</option>
+               <option value="1">Kawasaki</option>
+               <option value="2">Suzuki</option>
+               <option value="3">BMW</option>
+               <option value="4">Yamaha</option>
+               <option value="5">Ducati</option>
+               <option disabled>---------</option>
+            </select>
+            <label for="data_rozpoczecia">Data rozpoczęcia:</label>
+            <input type="date" name="data_rozpoczecia" id="data_rozpoczecia">
+            <label for="czas_rozpoczecia">Czas rozpoczęcia:</label>
+            <input type="time" name="czas_rozpoczecia" id="czas_rozpoczecia">
+            <label for="czas_zakonczenia">Czas zakończenia:</label>
+            <input type="time" name="czas_zakonczenia" id="czas_zakonczenia">
+            <input type="submit" value="Zarezerwuj">
+        </form>
+    </section>
+
+    <section>
+        <h2>Kontakt</h2>
+        <h4>Formularz</h4>
+        <form method="post" action="kontakt.php">
+            <label for="imie">Imię:</label>
+            <input type="text" name="imie" id="imie">
+            <label for="email">Adres email:</label>
+            <input type="email" name="email" id="email">
+            <label for="wiadomosc">Wiadomość:</label>
+            <textarea name="wiadomosc" id="wiadomosc"></textarea>
+            <input type="submit" value="Wyślij">
+        </form>
+    </section>
+
+    <footer>
+        <p>&copy; 2023 Kacper Kowalczyk</p>
+    </footer>
+</body>
+</html>
