@@ -6,6 +6,6 @@
     <title>Document</title>
 </head>
 <body>
-     <h1>W trakcie...</h1>
+    <h1>W trakcie...</h1>
 </body>
 </html>
