@@ -22,6 +22,7 @@
         <span class="fa fa-phone"></span>+48 123 345 567
         <span class="fa fa-envelope-o"></span> motorWyp@gmail.com
     </div>
+    
 
     <script>
         function wyslij() {

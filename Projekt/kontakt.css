@@ -12,7 +12,7 @@ body {
     padding:20px 30px;
     max-width:calc(100vw - 40px);
     box-sizing:border-box;
-    font-family:'Montserrat',sans-serif;
+    font-family:'monospace';
     position:relative
 }
 h2 {
@@ -30,7 +30,7 @@ input {
     outline:none;
     resize:none;
     border:0;
-    font-family:'Montserrat',sans-serif;
+    font-family:'monospace';
     transition:all .3s;
     border-bottom:2px solid #bebed2
 }
@@ -48,7 +48,7 @@ button {
     float:right;
     padding:8px 12px;
     margin:8px 0 0;
-    font-family:'Montserrat',sans-serif;
+    font-family:'monospace';
     border:2px solid #78788c;background:0;
     color:#5a5a6e;cursor:pointer;
     transition:all .3s

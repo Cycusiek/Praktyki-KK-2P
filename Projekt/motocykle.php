@@ -17,5 +17,9 @@
             <li>Ducati: Panigale V4 R</li>
         </ul>
     </div>
+
+    <div>
+        <?php include 'stopka.php';?>
+    </div>
 </body>
 </html>

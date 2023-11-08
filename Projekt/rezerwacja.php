@@ -31,5 +31,9 @@
             <input type="submit" value="Zarezerwuj" class="Zarezerwuj">
         </form>
     </div>
+
+    <div>
+        <?php include 'stopka.php';?>
+    </div>
 </body>
 </html>
