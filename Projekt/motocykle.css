@@ -1,0 +1,32 @@
+body {
+    background-color: rgb(44, 44, 44);
+}
+
+#lista {
+    text-align: center;
+}
+
+.motocykl {
+    display: inline-block;
+    margin: 20px;
+}
+
+.motocykl img {
+    max-width: 200px;
+    height: auto;
+    border-radius: 10px;
+}
+
+.motocykl p {
+    text-align: center;
+    font-weight: bold;
+    color: white;
+}
+
+#stopka {
+    margin-top :162px;
+}
+
+h2 {
+    color: rgb(190, 190, 190);
+}
