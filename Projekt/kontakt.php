@@ -7,6 +7,12 @@
     <title>Formularz Kontaktowy</title>
 </head>
 <body>
+    <div class="header">
+        <a href="index.php">
+            <img src="images/return.png" alt="Powrót">
+        </a>
+    </div>
+
     <form class="form">
         <h2>Skontaktuj się z Nami</h2>
         <p>Imię:</p>
@@ -17,12 +23,15 @@
         <textarea placeholder="Wiadomość" id="wiadomosc" required></textarea>
         <button onclick="wyslij()">Wyślij</button>
     </form>
-    
-    <div>
+
+    <div class="info">
         <span class="fa fa-phone"></span>+48 123 345 567
         <span class="fa fa-envelope-o"></span> motorWyp@gmail.com
     </div>
-    
+
+    <div id="stopka">
+        <?php include 'stopka.php';?>
+    </div>
 
     <script>
         function wyslij() {
