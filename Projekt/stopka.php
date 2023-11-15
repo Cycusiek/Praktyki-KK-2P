@@ -7,7 +7,7 @@
 </head>
 <body>
     <div id="stopka">
-        <p>&copy; 2023 Kacper Kowalczyk</p>
+        <p id="tekst">&copy; 2023 Kacper Kowalczyk</p>
     </div>
 </body>
 </html>
