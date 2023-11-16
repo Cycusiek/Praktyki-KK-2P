@@ -8,154 +8,150 @@
     <title>Motocykle</title>
 </head>
 <body>
-<div id="header" onclick="redirectToIndex()">
-        Strona Główna
+<div id="header" onclick="redirectToIndex()">Strona Główna</div>
+
+<div id="lista" class="section">
+    <h2>Lista dostępnych motocykli</h2>
+    
+                                                             <!-- początek listy motocyklów -->
+    <div class="motocykl" id="kawasaki">
+        <img src="images/Ninja.jpg" alt="Kawasaki Ninja H2" onclick="toggleSpecs('kawasaki-specs', 'Kawasaki: Ninja H2', 'Pojemność: 998 cm³\nMoc Maksymalna: 200.0 KM\nWaga: 238.1 kg')">
+        <p id="kawasaki-specs">Kawasaki: Ninja H2</p>
     </div>
 
-    <div id="lista" class="section">
-        <h2>Lista dostępnych motocykli</h2>
-
-        <div class="motocykl" id="kawasaki">
-            <img src="images/Ninja.jpg" alt="Kawasaki Ninja H2" onmouseover="highlight(this)" onmouseout="unhighlight(this)" onclick="showSpecs('Kawasaki Ninja H2', '1200cc, 310 KM, 216 kg')">
-            <p>Kawasaki: Ninja H2</p>
-        </div>
-
-        <div class="motocykl" id="suzuki">
-            <img src="images/suzuki.jpg" alt="Suzuki GSX-R1000" onmouseover="highlight(this)" onmouseout="unhighlight(this)" onclick="showSpecs('Suzuki GSX-R1000', '1000cc, 185 KM, 203 kg')">
-            <p>Suzuki: GSX-R1000</p>
-        </div>
+    <div class="motocykl" id="suzuki">
+        <img src="images/suzuki.jpg" alt="Suzuki GSX-R1000" onclick="toggleSpecs('suzuki-specs', 'Suzuki: GSX-R1000', 'Pojemność: 999 cm³\nMoc Maksymalna: 178 KM (131 kW)\nWaga: 170 kg')">
+        <p id="suzuki-specs">Suzuki: GSX-R1000</p>
+    </div>
 
         <div class="motocykl" id="bmw">
-            <img src="images/bmw.jpg" alt="BMW S1000RR" onmouseover="highlight(this)" onmouseout="unhighlight(this)" onclick="showSpecs('BMW S1000RR', '1000cc, 205 KM, 197 kg')">
-            <p>BMW: S1000RR</p>
+            <img src="images/bmw.jpg" alt="BMW S1000RR"  onclick="toggleSpecs('bmw-specs', 'BMW: S1000RR','Pojemność: 999 cm³\nMoc Maksymalna: 207 KMn\nWaga: 204 kg')">
+            <p id="bmw-specs">BMW: S1000RR</p>
         </div>
 
         <div class="motocykl" id="yamaha">
-            <img src="images/yamaha.jpg" alt="Yamaha YZF-R1" onmouseover="highlight(this)" onmouseout="unhighlight(this)" onclick="showSpecs('Yamaha YZF-R1', '1000cc, 200 KM, 199 kg')">
-            <p>Yamaha: YZF-R1</p>
+            <img src="images/yamaha.jpg" alt="Yamaha YZF-R1"  onclick="toggleSpecs('yamaha-specs','Yamaha: YZF-R1','Pojemność: 998 cm³\nMoc Maksymalna:  197.0 KM\nWaga: 203 kg')">
+            <p id="yamaha-specs">Yamaha: YZF-R1</p>
         </div>
 
         <div class="motocykl" id="ducati">
-            <img src="images/ducati.jpg" alt="Ducati Panigale V4 R" onmouseover="highlight(this)" onmouseout="unhighlight(this)" onclick="showSpecs('Ducati Panigale V4 R', '1103cc, 221 KM, 193 kg')">
-            <p>Ducati: Panigale V4 R</p>
+            <img src="images/ducati.jpg" alt="Ducati Panigale V4 R"  onclick="toggleSpecs('ducati-specs','Ducati: Panigale V4 R','Pojemnośc: 998cm³\nMoc Maksymalna: 218 KM\nWaga: 172 kg')">
+            <p id="ducati-specs">Ducati: Panigale V4 R</p>
         </div>
 
         <div class="motocykl" id="honda">
-            <img src="images/honda cbr600r.jpg" alt="Honda CBR600R" onmouseover="highlight(this)" onmouseout="unhighlight(this)" onclick="showSpecs('Honda CBR600R', '599cc, 118 KM, 196 kg')">
-            <p>Honda: CBR 600R</p>
+            <img src="images/honda cbr600r.jpg" alt="Honda CBR600R"  onclick="toggleSpecs('honda-specs', 'Honda: CBR 600R','Pojemność: 599.0 cm³\nMoc Maksymalna: 118 KM\nWaga: 186.0 kg')">
+            <p id="honda-desc">Honda: CBR 600R</p>
         </div>
 
         <div class="motocykl" id="aprilia">
-            <img src="images/aprilia RSV4.jpg" alt="Aprilia RSV4" onmouseover="highlight(this)" onmouseout="unhighlight(this)" onclick="showSpecs('Aprilia RSV4', '999cc, 201 KM, 199 kg')">
-            <p>Aprilia: RSV4</p>
+            <img src="images/aprilia RSV4.jpg" alt="Aprilia RSV4"  onclick="toggleSpecs('aprilia-specs', 'Aprilia: RSV4','Pojemność: 1099 cm³\nMoc maksymalna: 217 KM (159,5 kW)\nWaga: 202 kg')">
+            <p id="aprilia-specs">Aprilia: RSV4</p>
         </div>
 
         <div class="motocykl" id="kawasaki">
-            <img src="images/Ninja e-1.jpg" alt="Ninja e-1" onmouseover="highlight(this)" onmouseout="unhighlight(this)" onclick="showSpecs('Ninja e-1', '1000cc, 180 KM, 200 kg')">
-            <p>Kawasaki: Ninja E-1: ABS</p>
+            <img src="images/Ninja e-1.jpg" alt="Ninja e-1"  onclick="toggleSpecs('kawasaki-specs', 'Kawasaki: Ninja E-1: ABS','Pojemność: 125 cm³\nMoc maksymalna: 9,0 kW {12 KM}\nWaga: 140 kg')">
+            <p id="kawasakie-1-specs">Kawasaki: Ninja E-1: ABS</p>
         </div>
 
         <div class="motocykl" id="suzuki">
-            <img src="images/Suzuki gsx8r.webp" alt="Suzuki gsx8r" onmouseover="highlight(this)" onmouseout="unhighlight(this)" onclick="showSpecs('Suzuki gsx8r', '800cc, 150 KM, 185 kg')">
-            <p>Suzuki: GSX8R</p>
+            <img src="images/Suzuki gsx8r.webp" alt="Suzuki gsx8r"  onclick="toggleSpecs('suzuki-specs', 'Suzuki: GSX8R','Pojemność: 776 cm³\nMoc maksymalna: 83 KM (61 kW)\nWaga: 205 kg')">
+            <p id="suzuki-specs">Suzuki: GSX8R</p>
         </div>
 
         <div class="motocykl" id="bmw">
-            <img src="images/bmw r1250 rs.jpg" alt="Bmw r1250 rs" onmouseover="highlight(this)" onmouseout="unhighlight(this)" onclick="showSpecs('Bmw r1250 rs', '1254cc, 136 KM, 236 kg')">
-            <p>BMW: R1250 RS</p>
+            <img src="images/bmw r1250 rs.jpg" alt="Bmw r1250 rs"  onclick="toggleSpecs('bmw-specs', 'BMW: R1250 RS','Pojemność: 1.254 cm³\nMoc maksymalna: 100 kW (136 KM)\nWaga: 243 kg')">
+            <p id="bmw-specs">BMW: R1250 RS</p>
         </div>
 
         <div class="motocykl" id="yamaha">
-            <img src="images/yamaha mt-10.jpg" alt="Yamaha mt-10" onmouseover="highlight(this)" onmouseout="unhighlight(this)" onclick="showSpecs('Yamaha mt-10', '998cc, 160 KM, 210 kg')">
-            <p>Yamaha: MT-10</p>
+            <img src="images/yamaha mt-10.jpg" alt="Yamaha mt-10"  onclick="toggleSpecs('yamaha-specs', 'Yamaha: MT-10','Pojemność: 998 cm³\nMoc maksymalna: 165,9 KM (122,0 kW)\nWaga: 214 kg')">
+            <p id="yamaha-specs">Yamaha: MT-10</p>
         </div>
 
         <div class="motocykl" id="ducati">
-            <img src="images/ducati Superleggera V4.jpg" alt="Ducati Superleggera V4" onmouseover="highlight(this)" onmouseout="unhighlight(this)" onclick="showSpecs('Ducati Superleggera V4', '998cc, 234 KM, 152 kg')">
-            <p>Ducati: Superleggera V4</p>
+            <img src="images/ducati Superleggera V4.jpg" alt="Ducati Superleggera V4"  onclick="toggleSpecs('ducati-specs', 'Ducati: Superleggera V4','Pojemnośc: 998 cm³\nMoc Maksymalna: 234 KM\nWaga: 152,2 kg')">
+            <p id="ducati-specs">Ducati: Superleggera V4</p>
         </div>
 
         <div class="motocykl" id="honda">
-            <img src="images/CBR1000RR-R Fireblade.jpg" alt="Honda CBR1000RR-R" onmouseover="highlight(this)" onmouseout="unhighlight(this)" onclick="showSpecs('Honda CBR1000RR-R', '1000cc, 214 KM, 201 kg')">
-            <p>Honda: CBR1000RR-R</p>
+            <img src="images/CBR1000RR-R Fireblade.jpg" alt="Honda CBR1000RR-R"  onclick="toggleSpecs('honda-specs', 'Honda: CBR1000RR-R','Pojemność: 999,9 cm³\nMoc Maksymalna: 216,9 KM (159,5 kW)\nWaga: 201,3 kg')">
+            <p id="honda-specs">Honda: CBR1000RR-R</p>
         </div>
 
         <div class="motocykl" id="aprilia">
-            <img src="images/aprilia RS 125.jpg" alt="Aprilia RS 125" onmouseover="highlight(this)" onmouseout="unhighlight(this)" onclick="showSpecs('Aprilia RS 125', '125cc, 15 KM, 135 kg')">
-            <p>Aprilia: RS125</p>
+            <img src="images/aprilia RS 125.jpg" alt="Aprilia RS 125"  onclick="toggleSpecs('aprilia-specs', 'Aprilia: RS125','Pojemność: 125 cm³\nMoc Maksymalna: 34 KM\nWaga: 142 kg')">
+            <p id="aprilia-specs">Aprilia: RS125</p>
         </div>
 
         <div class="motocykl" id="kawasaki">
-            <img src="images/Ninja zx4r.jpg" alt="Ninja ZX4R" onmouseover="highlight(this)" onmouseout="unhighlight(this)" onclick="showSpecs('Ninja ZX4R', '400cc, 60 KM, 180 kg')">
-            <p>Kawasaki: Ninja ZX4R</p>
+            <img src="images/Ninja zx4r.jpg" alt="Ninja ZX4R"  onclick="toggleSpecs('kawasaki-specs', 'Kawasaki: Ninja ZX4R','Pojemność: 399 cm³\nMoc Maksymalna: 57 kW {77 KM}\nWaga: 189 kg')">
+            <p id="kawasakizx4r-specs">Kawasaki: Ninja ZX4R</p>
         </div>
 
         <div class="motocykl" id="suzuki">
-            <img src="images/Suzuki gsxr125.webp" alt="Suzuki GSXR 125" onmouseover="highlight(this)" onmouseout="unhighlight(this)" onclick="showSpecs('Suzuki GSXR 125', '125cc, 15 KM, 134 kg')">
-            <p>Suzuki: GSXR-125</p>
+            <img src="images/Suzuki gsxr125.webp" alt="Suzuki GSXR 125"  onclick="toggleSpecs('suzuki-specs', 'Suzuki: GSXR-125','Pojemność: 124,4 cm³\nMoc Maksymalna: 11 kW (15 KM)\nWaga: 134 kg')">
+            <p id="suzuki-specs">Suzuki: GSXR-125</p>
         </div>
 
         <div class="motocykl" id="bmw">
-            <img src="images/bmw m1000rr.jpg" alt="Bmw m1000 rr" onmouseover="highlight(this)" onmouseout="unhighlight(this)" onclick="showSpecs('Bmw m1000 rr', '1000cc, 212 KM, 192 kg')">
-            <p>BMW: M1000 RR</p>
+            <img src="images/bmw m1000rr.jpg" alt="Bmw m1000 rr"  onclick="toggleSpecs('bmw-specs', 'BMW: M1000 RR','Pojemność: 999 cm³\nMoc Maksymalna: 212 KM (156 kW)\nWaga: 199 kg')">
+            <p id="bmw-specs">BMW: M1000 RR</p>
         </div>
 
         <div class="motocykl" id="yamaha">
-            <img src="images/yamaha r1m.jpg" alt="Yamaha R1M" onmouseover="highlight(this)" onmouseout="unhighlight(this)" onclick="showSpecs('Yamaha R1M', '1000cc, 200 KM, 199 kg')">
-            <p>Yamaha: R1M</p>
+            <img src="images/yamaha r1m.jpg" alt="Yamaha R1M"  onclick="toggleSpecs('yamaha-specs', 'Yamaha: R1M','Pojemność: 998 cm³\nMoc Maksymalna: 200.0 KM\nWaga: 200.0 kg')">
+            <p id="yamaha-specs">Yamaha: R1M</p>
         </div>
 
         <div class="motocykl" id="ducati">
-            <img src="images/ducati panigale v2.jpg" alt="Ducati Panigale V2" onmouseover="highlight(this)" onmouseout="unhighlight(this)" onclick="showSpecs('Ducati Panigale V2', '955cc, 155 KM, 199 kg')">
-            <p>Ducati: Panigale V2</p>
+            <img src="images/ducati panigale v2.jpg" alt="Ducati Panigale V2"  onclick="toggleSpecs('ducati-specs', 'Ducati: Panigale V2','Pojemność: 955 cm³\nMoc Maksymalna: KM/KW: 155/114\nWaga: 200 kg')">
+            <p id="ducati-specs">Ducati: Panigale V2</p>
         </div>
 
         <div class="motocykl" id="honda">
-            <img src="images/cb750 hornet.jpg" alt="Honda CB750 Hornet" onmouseover="highlight(this)" onmouseout="unhighlight(this)" onclick="showSpecs('Honda CB750 Hornet', '748cc, 92 KM, 218 kg')">
-            <p>Honda CB750 Hornet</p>
+            <img src="images/cb750 hornet.jpg" alt="Honda CB750 Hornet"  onclick="toggleSpecs('honda-specs', 'Honda CB750 Hornet','Pojemność: 755 cm³\nMoc Maksymalna: 67,6 kW\nWaga: 190 kg')">
+            <p id="honda-specs">Honda CB750 Hornet</p>
         </div>
 
         <div class="motocykl" id="aprilia">
-            <img src="images/aprilia RS 660.jpg" alt="Aprilia RS 660" onmouseover="highlight(this)" onmouseout="unhighlight(this)" onclick="showSpecs('Aprilia RS 660', '660cc, 100 KM, 169 kg')">
-            <p>Aprilia: RS 660</p>
+            <img src="images/aprilia RS 660.jpg" alt="Aprilia RS 660"  onclick="toggleSpecs('aprilia-specs', 'Aprilia: RS 660','Pojemność: 659 cm³\nMoc Maksymalna: 73,5 kW\nWaga: 183 kg')">
+            <p id="aprilia-specs">Aprilia: RS 660</p>
         </div>
     </div>
+                                                                 <!-- koniec listy motocyklów -->
+       <div id="specyfikacje" class="hidden">
+          <div id="content"></div>
+            <button onclick="hideSpecs()">Zamknij</button>
+      </div>
+   
+                <?php include 'stopka.php';?>
 
-    <div id="specyfikacje" class="hidden" onclick="hideSpecs()">
-        <div id="content">
-            
-        </div>
-    </div>
 
-    <div>
-        <?php include 'stopka.php';?>
-    </div>
-
+                <!-- javascript -->
     <script>
-        function highlight(element) {
-            element.style.opacity = '0.8';
-            element.style.transition = 'opacity 0.3s';
+    function toggleSpecs(specsId, desc, specyfikacje) {
+        var specsDiv = document.getElementById(specsId);
+        var contentDiv = document.getElementById('content');
+        var descParagraph = document.getElementById(desc.toLowerCase() + '-desc');
+
+        if (specsDiv.classList.contains('hidden')) {
+            contentDiv.innerHTML = '<h3>' + desc + '</h3><p>' + specyfikacje + '</p>';
+            specsDiv.classList.remove('hidden');
+        } else {
+            specsDiv.classList.add('hidden');
         }
 
-        function unhighlight(element) {
-            element.style.opacity = '1';
-        }
+        document.getElementById('specyfikacje').classList.remove('hidden');
+    }
 
-        function showSpecs(model, specyfikacje) {
-            var specyfikacjeDiv = document.getElementById('specyfikacje');
-            var contentDiv = document.getElementById('content');
-            contentDiv.innerHTML = '<h3>' + model + '</h3><p>' + specyfikacje + '</p>';
-            specyfikacjeDiv.classList.remove('hidden');
-        }
+    function hideSpecs() {
+        document.getElementById('specyfikacje').classList.add('hidden');
+    }
 
-        function hideSpecs() {
-            var specyfikacjeDiv = document.getElementById('specyfikacje');
-            specyfikacjeDiv.classList.add('hidden');
-        }
-
-        function redirectToIndex() {
-            window.location.href = 'index.php';
-        }
-    </script>
+    function redirectToIndex() {
+        window.location.href = 'index.php';
+    }
+</script>
 </body>
 </html>
